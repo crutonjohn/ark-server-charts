@@ -152,9 +152,9 @@ spec:
             - name: am_ark_GameModIds
               value: {{ join "," $mods | quote }}
             - name: am_arkGameIniFile
-              value: /arkconfig/Game.ini
+              value: /ark/config/Game.ini
             - name: am_arkGameUserSettingsIniFile
-              value: /arkconfig/GameUserSettings.ini
+              value: /ark/config/GameUserSettings.ini
             {{- if $extraEnvVars }}
             {{- toYaml $extraEnvVars | nindent 12 }}
             {{- end }}
