@@ -73,7 +73,8 @@ rcon:
   password:
 
 # Global extraEnvVars for all servers
-extraEnvVars: []
+extraEnvVars:
+  - arkBackupPreUpdate: true
 #  - name: am_arkwarnminutes
 #    value: "15"
 
